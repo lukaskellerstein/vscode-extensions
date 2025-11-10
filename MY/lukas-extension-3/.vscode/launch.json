@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "preLaunchTask": "npm: watch",
+      "sourceMaps": true
+    },
+    {
+      "name": "Run Extension (Production)",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js"
+      ],
+      "preLaunchTask": "npm: package",
+      "sourceMaps": false
+    },
+    {
+      "name": "Extension Tests",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}",
+        "--extensionTestsPath=${workspaceFolder}/dist/test/suite/index"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/test/**/*.js"
+      ],
+      "preLaunchTask": "npm: watch"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Extension + Watch",
+      "configurations": ["Run Extension"],
+      "preLaunchTask": "npm: watch",
+      "stopAll": true
+    }
+  ]
+}

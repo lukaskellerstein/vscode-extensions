@@ -1,0 +1,11 @@
+[project]
+name = "luke-editor-agent"
+version = "0.1.0"
+description = "AI agent for Luke Editor using Claude Agent SDK"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=3.4.3",
+    "anyio>=4.9.0",
+    "claude-agent-sdk>=0.1.0",
+]

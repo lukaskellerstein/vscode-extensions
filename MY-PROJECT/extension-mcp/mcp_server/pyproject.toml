@@ -1,0 +1,11 @@
+[project]
+name = "luke-editor-mcp-server"
+version = "0.1.0"
+description = "MCP server for Luke Editor drawing tools"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=3.4.3",
+    "mcp>=1.9.2",
+    "websocket-client>=1.6.0",
+]

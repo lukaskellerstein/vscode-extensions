@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm: compile - MY-PROJECT/extension-mcp/extension",
+      "type": "npm",
+      "script": "compile",
+      "path": "MY-PROJECT/extension-mcp/extension",
+      "group": "build",
+      "problemMatcher": ["$tsc"],
+      "detail": "tsc -p ./"
+    },
+    {
+      "label": "npm: compile - MY/lukas-extension-1",
+      "type": "npm",
+      "script": "compile",
+      "path": "MY/lukas-extension-1",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "tsc -p ./"
+    },
+    {
+      "label": "npm: compile - MY/lukas-extension-2",
+      "type": "npm",
+      "script": "compile",
+      "path": "MY/lukas-extension-2",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "tsc -p ./"
+    },
+    {
+      "label": "npm: compile - MY/lukas-extension-3",
+      "type": "npm",
+      "script": "compile",
+      "path": "MY/lukas-extension-3",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "node esbuild.js"
+    },
+    {
+      "label": "npm: compile - MY/lukas-extension-4",
+      "type": "npm",
+      "script": "compile",
+      "path": "MY/lukas-extension-4",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "node esbuild.js"
+    }
+  ]
+}

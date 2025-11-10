@@ -1,0 +1,61 @@
+{
+  "configurations": [
+    {
+      "name": "Luke Editor Extension",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/MY-PROJECT/extension-mcp/extension",
+        "/home/lukas/Temp/vscodetemp"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/MY-PROJECT/extension-mcp/extension/out/**/*.js"
+      ],
+      "preLaunchTask": "npm: compile - MY-PROJECT/extension-mcp/extension",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "name": "lukas-extension-1",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/MY/lukas-extension-1",
+        "/home/lukas/Temp/vscodetemp"
+      ],
+      "outFiles": ["${workspaceFolder}/MY/lukas-extension-1/out/**/*.js"],
+      "preLaunchTask": "npm: compile - MY/lukas-extension-1",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "name": "lukas-extension-2",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/MY/lukas-extension-2",
+        "/home/lukas/Temp/vscodetemp"
+      ],
+      "outFiles": ["${workspaceFolder}/MY/lukas-extension-2/out/**/*.js"],
+      "preLaunchTask": "npm: compile - MY/lukas-extension-2",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "name": "lukas-extension-3",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/MY/lukas-extension-3",
+        "/home/lukas/Temp/vscodetemp"
+      ],
+      "outFiles": ["${workspaceFolder}/MY/lukas-extension-3/out/**/*.js"],
+      "preLaunchTask": "npm: compile - MY/lukas-extension-3",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "name": "lukas-extension-4",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/MY/lukas-extension-4",
+        "/home/lukas/Temp/vscodetemp"
+      ],
+      "outFiles": ["${workspaceFolder}/MY/lukas-extension-4/out/**/*.js"],
+      "preLaunchTask": "npm: compile - MY/lukas-extension-4",
+      "request": "launch",
+      "type": "extensionHost"
+    }
+  ]
+}

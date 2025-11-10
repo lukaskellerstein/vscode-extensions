@@ -1,0 +1,79 @@
+{
+  "name": "lukas-extension-4",
+  "displayName": "lukas-extension-4",
+  "description": "VSCode extension with React UI and Custom Text Editor",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "lukas-extension-4.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "lukas-extension-4.lukeEditor",
+        "displayName": "Luke Editor",
+        "selector": [
+          {
+            "filenamePattern": "*.luke"
+          }
+        ],
+        "priority": "default"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "lukas-extension-4-sidebar",
+          "title": "Lukas Extension 4",
+          "icon": "$(tools)"
+        }
+      ]
+    },
+    "views": {
+      "lukas-extension-4-sidebar": [
+        {
+          "type": "webview",
+          "id": "lukas-extension-4.sidePanel",
+          "name": "Luke Editor Panel"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "node esbuild.js --production",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts,tsx",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.24.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "elements": [
+    {
+      "id": "circle1",
+      "x": 100,
+      "y": 100,
+      "radius": 50,
+      "color": "#FF0000"
+    },
+    {
+      "id": "rect1",
+      "x": 250,
+      "y": 150,
+      "width": 120,
+      "height": 80,
+      "color": "#0000FF"
+    },
+    {
+      "id": "text1",
+      "x": 100,
+      "y": 50,
+      "text": "Hello Luke Editor!",
+      "fontSize": 20,
+      "color": "#00AA00"
+    }
+  ]
+}
